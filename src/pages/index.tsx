@@ -1,4 +1,5 @@
 import { NextPage } from "next"
+import Head from "next/head"
 import GithubCorner from "react-github-corner"
 
 import { Divider, Flex } from "@chakra-ui/react"
@@ -13,6 +14,10 @@ import { TextBox } from "../components/TextBox"
 const Index: NextPage = () => {
   return (
     <BgImage overflow="hidden">
+      <Head>
+        <title>Mars - The Red Planet</title>
+        <link rel="icon" href="/img/mars.png" />
+      </Head>
       <Navbar />
       <Flex justify="space-around">
         <Flex w="30px" alignItems="center" justify="center">
