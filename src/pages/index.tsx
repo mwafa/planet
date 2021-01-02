@@ -1,4 +1,5 @@
 import { NextPage } from "next"
+import GithubCorner from "react-github-corner"
 
 import { Divider, Flex } from "@chakra-ui/react"
 
@@ -31,6 +32,13 @@ const Index: NextPage = () => {
         </Flex>
         <SideText />
       </Flex>
+      <GithubCorner
+        href="https://github.com/mwafa/planet"
+        bannerColor="#64CEAA"
+        octoColor="#fff"
+        size={80}
+        direction="right"
+      />
     </BgImage>
   )
 }
