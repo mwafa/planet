@@ -5,6 +5,7 @@ import GithubCorner from "react-github-corner"
 import { Divider, Flex } from "@chakra-ui/react"
 
 import { BgImage } from "../components/BgImage"
+import { Footer } from "../components/Footer"
 import { Mars } from "../components/Mars"
 import { Navbar } from "../components/Navbar"
 import { Red } from "../components/Red"
@@ -44,6 +45,7 @@ const Index: NextPage = () => {
         size={80}
         direction="right"
       />
+      <Footer />
     </BgImage>
   )
 }
