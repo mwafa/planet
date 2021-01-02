@@ -1,14 +1,19 @@
 import { NextPage } from "next"
 
-import { Box, Container } from "@chakra-ui/react"
+import { Container, Flex } from "@chakra-ui/react"
+
+import { BgImage } from "../components/BgImage"
+import { Mars } from "../components/Mars"
 
 const Index: NextPage = () => {
-  const date = new Date()
   return (
-    <Container textAlign="center">
-      <Box>Welcome</Box>
-      <Box>{date.toLocaleDateString()}</Box>
-    </Container>
+    <BgImage overflow="hidden">
+      <Container textAlign="center">
+        <Flex minHeight="100vh" direction="column" justifyContent="center">
+          <Mars />
+        </Flex>
+      </Container>
+    </BgImage>
   )
 }
 
